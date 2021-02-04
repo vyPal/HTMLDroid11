@@ -1,3 +1,179 @@
 @charset "utf-8";
 /* CSS Document */
 
+.phone {
+  text-align: center;
+  height: 544px;
+  width: 262px;
+  border: 13px solid black;
+  border-radius: 40px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  background-image: url("images/background2.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center top;
+  background-size: 262px 544px;
+}
+
+.phone.locked {
+  background-image: url("images/background1.png");
+}
+
+.phone.locked.off {
+  background: black;
+}
+
+.phone.locked.off.booting {
+  background: white;
+}
+
+.camera {
+  background-color: black;
+  width: 18px;
+  height: 18px;
+  margin-top: 15px;
+  margin-left: 15px;
+  border-radius: 90px;
+  z-index: 5;
+}
+
+.volume-button {
+  height: 75px;
+  width: 10px;
+  float: right;
+  margin-right: -17px;
+  background-color: black;
+  border-radius: 90px;
+  position: absolute;
+  top: 45%;
+  left: 105%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: left 0.1s ease-in-out;
+}
+.volume-button:active {
+  left: 104%;
+}
+
+.power-button {
+  height: 40px;
+  width: 10px;
+  float: right;
+  margin-right: -17px;
+  background-color: black;
+  border-radius: 90px;
+  position: absolute;
+  top: 30%;
+  left: 105%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: left 0.1s ease-in-out;
+}
+.power-button:active {
+  left: 104%;
+}
+
+.nav-buttons{
+  width: 100%;
+  height: 35px;
+  background-color: rgba(0, 0, 0, 0.63);
+  position: absolute;
+  left: 50%;
+  top: 97%;
+  transform: translate(-50%, -50%);
+}
+
+.locked .nav-buttons {
+  display: none;
+}
+
+.unlock-button-cont {
+  height: 80%;
+}
+
+.unlock-button{
+  text-align: center;
+  vertical-align: middle;
+  line-height: 25px;
+  width: 200px;
+  height: 28px;
+  background-color: rgba(0, 0, 0, 0.63);
+  position: absolute;
+  left: 12%;
+  top: 80%;
+  /*transform: translate(-50%, -50%);*/
+  color: white;
+  border-radius: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+.locked .unlock-button {
+  display: initial;
+}
+
+.off .unlock-button {
+  display: none;
+  cursor: default;
+}
+
+.gesture-pill {
+  background-color: white;
+  width: 23px;
+  height: 7px;
+  border-radius: 40px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.locked .gesture-pill {
+  display: none;
+}
+
+.back-button {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  left: 25%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.locked .back-button {
+  display: none;
+}
+
+#bootscreen {
+  z-index: -1;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.faceid {
+  display: none;
+}
+
+.locked .faceid {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 50%;
+  top: 7%;
+  transform: translate(-50%, -50%);
+  display: initial;
+}
+
+.locked.off .faceid {
+  display: none;
+}

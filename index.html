@@ -2,9 +2,30 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
         <title>HTMLDroid11</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous"></script>
     </head>
     <body>
-        <h1>This page is being worked on</h1>
+      <div class="phone locked off" id="phone">
+        <div id="screen"></div>
+        <div class="camera"></div>
+        <img class="faceid" src="images/faceid.png"></img>
+        <div class="power-button" onclick="powerbtn()" id="powerbutton"></div>
+        <div class="volume-button"></div>
+        <div class="unlock-button-cont">
+          <div id="unlockbutton" class="unlock-button draggable">Face recognised, slide up</div>
+        </div>
+        <div class="nav-buttons">
+          <div class="gesture-pill"></div>
+          <img src="images/nav-arrow.png" class="back-button"></img>
+        </div>
+      </div>
+      <script src="script.js"></script>
     </body>
 </html>
